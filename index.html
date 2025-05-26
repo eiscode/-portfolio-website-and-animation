@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <title>Jung Jaehyun Portofolio</title>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <header >
+        <div class="logo">
+        <img src="Assets/Icons/peach.png" alt="logo" class="logo-img animate__animated animate__hinge animate__infinite">
+        <h1 class="logo" class="logo-title">Portoprofile</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="animate__animated animate__slideInDown">ABOUT ME</a></li>
+                <li><a href="#project" class="animate__animated animate__slideInDown">PROJECT</a></li>
+                <li><a href="mailto:help@smtown.com " class="animate__animated animate__slideInDown">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button class="btn-cta animate__animated animate__heartBeat animate__infinite" onclick="redirInstagram()">Follow Me</button>
+    </header>
+    <div class="container">
+        <div class="introduction">
+            <p class="title animate__animated animate__backInLeft">Hello, Jung Jaehyun Here!</p>
+            <p class="description animate__animated animate__backInRight">Neo Culture Technology Member</p>
+            <img src="Assets/Images/af63b8cc-5411-42e2-932e-cfb3789cd1f8.jfif" alt="Mr. Jaehyun Photo Profile" class="img-photo animate__animated animate__backInUp animate__delay-1s"/>
+        </div>
+    </div>
+
+    <div class="parallax">
+        <div class="about animate__animated animate__lightSpeedInRight animate__delay-2s" id="about">
+            <p>I'm a Singer</p>
+            <p>Kelas Kakap wkwkwkwk</p>
+            <div class="mt-10">
+                <button class="btn-cta" onclick="redirWhatsapp()">Let's Connected</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="cards animate__animated animate__tada animate__delay-3s">
+                <div class="card-item" id="project">
+                    <img src="Assets/Icons/karaoke_1424100.png" alt="photo profile" class="icon">
+                    <h5>SINGER</h5>
+                    <p class="card-title">Released Solo Music</p>
+                    <p class="card-description">You Can Listen On My Youtube Channel</p>
+                    <img src="" alt="">
+                    <button class="btn-follow" onclick="redirYoutube()">Listen To Me</button>
+                </div>
+                <div class="card-item">
+                    <img src="Assets/Icons/write music.png" alt="photo profile" class="icon">
+                    <h5>SONGWRITER</h5>
+                    <p class="card-title">Wrote My Solo Song</p>
+                    <p class="card-description">Participated In Songwriting For My Solo And Group Songs</p>
+                    <button class="btn-follow" onclick="redirSong()">Watch Me </button>
+                </div>
+                <div class="card-item">
+                    <img src="Assets/Icons/actor_323981.png" alt="photo profile" class="icon">
+                    <h5>ACTOR</h5>
+                    <p class="card-title">Main Cast Of The Drama & Film</p>
+                    <p class="card-description">Male Lead Of Dear M And You Will Die In 6 Hours</p>
+                    <button class="btn-follow" onclick="redirDrama()">Check My Song</button>
+                </div>
+                 <div class="card-item">
+                    <img src="Assets/Icons/Camera.png" alt="photo profile" class="icon">
+                    <h5>MODEL</h5>
+                    <p class="card-title">A Handsome Model</p>
+                    <p class="card-description">Global Ambassador For World's Biggest Fashion Brand Prada</p>
+                    <button class="btn-follow" onclick="redirHost()">Look At Me</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="animate__animated animate__slideInUp animate__delay-4s">&copy; Jung Jaehyun Portoprofile 2025</p>
+    </footer>
+
+    <script>
+        function redirInstagram() {
+            window.location.href = "https://instagram.com/_jeongjaehyun"
+        }
+
+        function redirWhatsapp() {
+            window.location.href = "https://wa.me/+829999227777"
+        }
+
+        function redirYoutube() {
+            window.location.href = "https://youtu.be/QxOpuD5iO0k?si=4LDw-kp14zcK0hKT"
+        }
+
+        function redirDrama() {
+            window.location.href = "https://www.iq.com/album/dear-m-2021-ixbedqvdud?lang=id_id&sh_pltf=4"
+        }
+
+        function redirSong() {
+            window.location.href = "https://youtu.be/_hWtuYSHiWk?si=paOEJEFTVZ_2_PKf"
+        }
+
+        function redirHost() {
+            window.location.href = "https://youtu.be/WdpTYS4aQ0s?si=d03r6Y4gke6OVPsh"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #1a2238;
+    color: white;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.logo-title {
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: rgb(91, 173, 91);
+    transform: rotate(2deg);
+    transition: all .5s ease 0s;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+li a {
+    transition: all .5s ease 0s;
+    display: inline-block;
+}
+
+li a:hover {
+    color: rgb(91, 173, 91);
+    transform: rotate(2deg);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 5px 12px;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.img-photo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.parallax {
+    background-image: url('Asset/Images/jaehyun.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #1a2238;
+    color: #fff;
+    padding: 30px;
+    font-size: 26px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    text-align: center;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+.card-item {
+    width: 20%;
+    background-color: #edeaea;
+    color: #222;
+    padding: 20px;
+    min-height: 200px;
+    max-height: 300px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.card-title {
+    font-size : 15px;
+    font-weight: bolder;
+}
+
+.card-description {
+    font-size: 14px;
+}
+
+.btn-follow {
+    margin-top: 10px;
+    margin-right: 10px;
+    border: none;
+    font-size: 15px;
+    padding: 5px 12px;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 4px;
+
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #1a2238;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .cards {
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-item {
+        width: 100%;
+        opacity: 0.9;
+    }
+    .container {
+        padding: 0;
+    }
+    .introduction {
+        margin-top: 20px;
+    }
+    .img-photo {
+        padding: 0;
+    }
+    nav {
+        position: fixed;
+        bottom: 0;
+        background: #1a2238;
+        z-index: 9;
+        width: 100%;
+    }
+    footer {
+        margin-bottom: 80px;
+        margin-top: 70px;
+    }
+}
